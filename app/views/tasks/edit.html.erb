@@ -3,5 +3,5 @@
 
 <%= render 'form' , task: @task %>
 
-<%= link_to '一覧に戻る', tasks_path %>
+
 <%= link_to '削除する', @task, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
