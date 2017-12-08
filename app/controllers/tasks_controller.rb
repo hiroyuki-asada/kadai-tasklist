@@ -20,6 +20,7 @@ def create
     redirect_to @task
   else
     flash.now[:danger] = '正常に投稿されませんでした'
+    #redirect_to new_task_path
     render :new
   end
 end
